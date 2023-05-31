@@ -1,0 +1,134 @@
+body {
+    background: rgb(204,204,204);
+}
+
+page {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    width: 21cm;
+    height: 29.7cm; 
+    padding: 5%;    
+}
+
+.top {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+page:nth-child(1) > *:not(.footer) {
+    margin: 1.5em auto;
+}
+
+section {
+    overflow: hidden;
+    max-height: 680px;
+    background: linear-gradient(
+        to bottom, 
+        #000 0%,
+        #000 60%,
+        #777 80%,
+        #fff 100%
+    );
+    background: -webkit-linear-gradient(
+        to bottom, 
+        #000 0%,
+        #000 60%,
+        #777 80%,
+        #fff 100%
+    );
+    background: -o-linear-gradient(
+        to bottom, 
+        #000 0%,
+        #000 60%,
+        #777 80%,
+        #fff 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section, p {
+    text-align: justify;
+}
+
+p:not(figcaption > p) {
+    text-indent: 40px;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption > p {
+    margin: 0.5em 0;
+}
+
+#meilleurs {
+    display: flex;
+    min-width: 0;
+}
+
+#meilleurs > figure {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+img:not(figure > img) {
+    width: auto;
+    height: 25%;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    background-color:#000;color:#fff;
+    font-size: 85%;
+}
+
+/* couleur de fond générale */
+tr {
+    background-color:gainsboro;
+}
+
+tr td:first-child {
+    background-color:#AAAAAA;
+    text-align:center
+}
+
+.baisse {
+    color: red;
+    font-weight: bold;
+}
+
+.hausse {
+    color: green;
+    font-weight: bold;
+}
+
+.chiffre {
+    color:#262262;
+}
+
+.footer {
+    flex-shrink: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    text-align: center; 
+    margin-top: auto;
+    align-self: flex-end;
+}
